@@ -3384,7 +3384,6 @@ void mcpwm_foc_adc_int_handler(void *p, uint32_t flags) {
 					(float*)&motor_now->m_motor_state.phase_cos);
 		}
 
-		// Apply MTPA. See: https://github.com/vedderb/bldc/pull/179
 		const float ld_lq_diff = conf_now->foc_motor_ld_lq_diff;
 		if (conf_now->foc_mtpa_mode != MTPA_MODE_OFF && ld_lq_diff != 0.0) {
 			const float lambda = conf_now->foc_motor_flux_linkage;

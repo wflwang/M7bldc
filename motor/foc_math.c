@@ -224,8 +224,6 @@ void foc_pll_run(float phase, float dt, float *phase_var,
 }
 
 /**
- * @brief svm Space vector modulation. Magnitude must not be larger than sqrt(3)/2, or 0.866 to avoid overmodulation.
- *        See https://github.com/vedderb/bldc/pull/372#issuecomment-962499623 for a full description.
  * @param alpha voltage
  * @param beta Park transformed and normalized voltage
  * @param PWMFullDutyCycle is the peak value of the PWM counter.
